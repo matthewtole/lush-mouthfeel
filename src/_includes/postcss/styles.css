@@ -3,3 +3,8 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+body {
+  background-image: url('/static/background.png');
+  background-color: #ea007b;
+}

@@ -1,7 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        serif: ['Lobster', 'serif'],
+      },
+    },
   },
   variants: {},
-  plugins: []
-}
+  plugins: [],
+};
