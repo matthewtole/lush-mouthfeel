@@ -1,3 +1,3 @@
-# eleventy-tailwind-starter
+# Lush Mouthfeel
 
-My starter template for building a site with Eleventy and Tailwind CSS
+What started as a dumb joke during a wine tasting, has turned into a dumb website! 
