@@ -2,10 +2,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Lobster', 'serif'],
+        serif: ['Charmonman', 'serif'],
       },
     },
   },
-  variants: {},
+  variants: {
+    borderWidth: ['hover'],
+  },
   plugins: [],
 };

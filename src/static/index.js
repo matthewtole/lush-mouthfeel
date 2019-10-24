@@ -1,14 +1,18 @@
 const text = document.getElementById('text');
 
-const randomWord = list => {
-  const index = Math.floor(Math.random() * list.length);
-  return list[index];
-};
+const grammar = epures.createGrammar({
+  adjective: ADJECTIVES,
+  noun: NOUNS,
+  mouthfeel: MOUTHFEEL,
+  origin: [
+    'This wine has #mouthfeel.a# mouthfeel and #adjective.a# bouquet',
+    'This wine has #adjective.a# #noun#',
+  ],
+});
+grammar.addModifiers(epures.modifiers.en_US);
 
 const generatePhrase = () => {
-  text.innerText = `This wine has a ${randomWord(ADJECTIVES)} ${randomWord(
-    NOUNS
-  )}`;
+  text.innerText = grammar.flatten('#origin#');
 };
 
 generatePhrase();
